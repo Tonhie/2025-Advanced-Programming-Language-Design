@@ -1,0 +1,24 @@
+#pragma once
+
+/* 将所有const常量定义的头文件包含进来 */
+#include "hanoi_const_value.h"
+
+/* ------------------------------------------------------------------------------------------------------
+
+     本文件功能：
+	1、为了保证 hanoi_main.cpp/hanoi_menu.cpp/hanoi_multiple_solutions.cpp 能相互访问函数的函数声明
+	2、一个以上的cpp中用到的宏定义（#define）或全局只读（const）变量，个数不限
+	3、可以参考 cmd_console_tools.h 的写法（认真阅读并体会）
+   ------------------------------------------------------------------------------------------------------ */
+
+
+int Menu();
+void hanoi_basic();
+void hanoi_basic_step_record();
+void hanoi_array_display_horizontal();
+void hanoi_array_display_vertical_horizontal();
+void hanoi_graphics_prepare_draw_cylinders();
+void hanoi_graphics_prepare_draw_disks();
+void hanoi_graphics_first_move();
+void hanoi_graphics_auto_move();
+void hanoi_graphics_game();
